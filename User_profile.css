@@ -1,0 +1,180 @@
+/*  NavBar css  */
+.NavBar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 20px 12px;
+  backdrop-filter:blur(20px);
+  background-color: rgba(0,0,0,0.6);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 15px; 
+}
+
+.NavBar nav{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 3%;
+  padding-right: 4%;
+  padding: 5px 16px;
+  
+}
+
+.NavBar nav ul{
+    list-style-type:none;
+    white-space:nowrap;
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items:center;
+
+}
+
+.NavBar nav ul li{
+    list-style-type:none;
+    display: inline-block; 
+    padding: 8px 20px;
+    margin-left: 8px;
+    
+    
+}
+
+.NavBar nav ul li:last-child{
+    margin-right:8px;
+}
+
+.NavBar nav ul li a{
+    color: rgba(255, 255, 255,255);
+    text-decoration: none;
+    font-weight:bolder;    
+}
+
+.UserIcon img{
+    width:40px;
+    height:30px;
+    padding-right:15px;
+    padding-top:4px;
+    margin-right:10px; 
+}
+
+.UserIcon img:hover{
+    transform: scale(1.2);
+    color:rgb(16, 218, 16);
+}
+
+.NavBar nav ul li a:hover{
+    color:rgb(16, 218, 16);
+    transition: 0.4s;
+}
+
+nav ul li a.active {
+    color: rgb(16, 218, 16);
+    font-weight: bold; 
+    
+}
+
+.NavBar span{
+    font-family:"Quicksand", sans-serif;;
+    margin-right:10px;
+    font-size:22px;
+    color:rgba(255, 255, 255,255);
+}
+
+/* user profile css */
+
+.heading{
+  text-align: center;
+  text-decoration-style: solid;
+}
+body {
+  background-image: url('images/10.jfif');
+  background-size: cover;
+  background-position: center;
+ 
+
+}
+
+#profileOutput,
+#additionalInfoOutput,
+#additionalInfoOutput2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.output-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 270px; 
+  background-color: #a1d89f; 
+  border-radius: 8px; 
+  margin-bottom: 20px;
+}
+
+.cont{
+  height: 700px;
+}
+
+/*  Footer css */
+.links {
+  background-color: #006600;
+  color: white;
+  padding: 50px 0;
+}
+
+.links-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.links-inner div {
+  margin-bottom: 30px;
+}
+
+.links-inner ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links-inner ul li h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.links-inner ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.links-inner .contact {
+  flex-basis: 300px;
+}
+
+.footer {
+  background-color: #006600;
+  color: white;
+  text-align: center;
+  padding: 20px 0; 
+  margin-top: 80px; 
+  margin-bottom: 0; 
+  font-size: 14px;
+  width: 100%;
+  height: 120px;
+}
+
+.footer p {
+  margin: 0;
+}

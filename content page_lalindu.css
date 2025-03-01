@@ -1,0 +1,360 @@
+/* HERO */
+body{
+    background-color: #159C69;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+*{
+    padding :0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans', sans-serif;
+     
+}
+
+.NavBar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 8px 22px;
+    backdrop-filter:blur(20px);
+    background-color: rgba(0,0,0,0.6);
+    
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 15px; 
+}
+
+.NavBar nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 3%;
+    padding-right: 4%;
+    padding: 5px 16px;
+    
+    
+}
+ 
+.NavBar nav ul{
+    list-style-type:none;
+    white-space:nowrap;
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items:center;
+
+}
+
+.NavBar nav ul li{
+    list-style-type:none;
+    display: inline-block; 
+    padding: 8px 20px;
+    margin-left: 8px;
+    
+    
+}
+
+.NavBar nav ul li:last-child{
+    margin-right:8px;
+}
+
+.NavBar nav ul li a{
+    color: rgba(255, 255, 255,255);
+    text-decoration: none;
+    font-weight:bolder;    
+}
+
+.UserIcon img{
+    width:40px;
+    height:30px;
+    padding-right:15px;
+    padding-top:4px;
+    margin-right:10px; 
+}
+
+.UserIcon img:hover{
+    transform: scale(1.2);
+    color:rgb(16, 218, 16);
+}
+
+.NavBar nav ul li a:hover{
+    color:rgb(16, 218, 16);
+    transition: 0.4s;
+}
+
+nav ul li a.active {
+    color: rgb(16, 218, 16);
+    font-weight: bold; 
+    
+}
+
+.NavBar span{
+    font-family:"Quicksand", sans-serif;;
+    margin-right:10px;
+    font-size:22px;
+    color:rgba(255, 255, 255,255);
+}
+
+
+.hero {
+    background-image: url(1images/hero.png);
+    background-size: cover;
+    
+    background-position: 100%;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    line-height: 2.5;
+}
+
+.hero .hero-title {
+    color: var(--main-color);
+    font-size: 34px;
+}
+
+.hero .hero-subtitle {
+    
+    font-weight: 400;
+    color: var(--main-color);
+    font-size: 18px;
+    margin: 0 auto 30px;
+}
+
+
+/* CONTENT */
+
+.content {
+    margin: 75px auto;
+}
+
+.content .stats {
+    margin: 75px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+}
+
+.content .stats .stats-item {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.30);
+    padding: 15px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+.content .stats .stats-item:hover {
+    cursor: default;
+    transform: scale(1.03);
+}
+
+.content .stats .stats-item:hover>h3 {
+    color: var(--orange);
+}
+
+.content .stats .stats-item h3 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.content .stats .stats-item p {
+    text-align: center;
+}
+
+.content .stats .vl {
+    border-radius: 20px;
+    border-left: 4px solid var(--purple);
+    height: 100px;
+}
+
+.content .content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 75px;
+    margin: 20px 100px;
+}
+
+.content .content-inner .content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.30);
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+}
+
+.content .content-inner .content-item:hover {
+    transform: scale(1.012);
+}
+
+.content .content-inner .content-item img {
+    border-radius: 8px;
+}
+
+.content .content-inner .content-item h3 {
+    margin-top: 10px;
+}
+
+.content .content-inner .content-item p {
+    margin: 10px 75px;
+    line-height: 1.6;
+}
+
+.content .content-inner .content-item a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.content .content-inner .content-item a:hover {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.content .food-content {
+    margin: 100px 0;
+}
+
+.content .Nutri  {
+    background-color: var(--shadow-color);
+    margin: 35px 0;
+    padding: 35px 150px;
+}
+
+.content .Nutri h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.content .access {
+    background-color: var(--shadow-color);
+    margin: 60px 0;
+    padding: 35px 150px;
+    
+}
+
+.content .access h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    
+}
+
+.content .agri {
+    background-color: var(--shadow-color);
+    margin: 60px 0;
+    padding: 35px 150px;
+}
+
+.content .agri h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.content .Security {
+    background-color: var(--main-color);
+    margin: 60px 0;
+    padding: 0 150px;
+}
+
+.content .Security h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.content .food-content .images {
+    display: flex;
+    justify-content: center;
+    column-gap: 75px;
+    margin-top: 50px;
+}
+
+.content .food-content .images img {
+    border-radius: 20px;
+}
+
+.editor {
+    padding: 50px;
+    text-align: end;
+}
+
+.editor a {
+    color: var(--main-color);
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 20px;
+}
+.editor a:hover {
+    color: var(--main-color);
+    padding: 10px;
+    background-color: var(--blue);
+    border-radius: 20px;
+}
+.links {
+    background-color: #006600;
+    color: white;
+    padding: 50px 0;
+}
+
+.links-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.links-inner div {
+    margin-bottom: 30px;
+}
+
+.links-inner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-inner ul li h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.links-inner ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-inner .contact {
+    flex-basis: 300px;
+}
+
+.footer {
+    background-color: #006600;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family:'Josefin Sans', sans-serif; 
+}
+.footer p {
+    margin: 0;
+}

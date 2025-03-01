@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="splsh.css">
+</head>
+<body>
+    <div class="background">
+    <div id="loading-icon"></div>
+    <div class="splash-screen">
+        <img src="2.png" alt="Healthy Harvest Logo" class="logo">
+        <h1>Healthy Harvest</h1>
+        <h2>Our Mission</h2>
+        <p class="mission-statement"> "At Healthy Harvest, we're dedicated to empowering individuals to prioritize their health and well-being.
+            Our mission is to provide valuable resources, information, and support to help you live a happier, healthier life.
+             Whether you're looking for tips on nutrition, fitness inspiration, strategies for managing stress, or guidance on
+             improving your mental health, we're here to help. Our team of experts curates evidence-based content, educational resources,
+             and interactive tools to support you on your journey to wellness. Join our community and take the first step towards a healthier,
+             more vibrant you."</p>
+        <h2>Group Members:</h2>
+        <ul>
+            <li>Dulith Chandika</li>
+            <li>Sasidu Rajapaksha</li>
+            <li>Lalindu Palliyaguruge</li>
+            <li>Inuka Wickramasinghe </li>
+            
+        </ul>
+       
+    </div>
+    <script>
+    
+        document.getElementById('loading-icon').style.display = 'none';
+
+        setTimeout(function() {
+            document.getElementById('loading-icon').style.display = 'block';
+        }, 2000);
+
+
+        setTimeout(function() {
+            document.getElementById('loading-icon').style.opacity = '0';
+        }, 4000);
+        setTimeout(function() {
+            window.location.href = "homepage.html"; 
+        }, 6000); 
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Organic Mango Juice",
+        "price": 2,
+        "image": "mango.jpeg"
+    },
+    {
+        "id": 2,
+        "name":" Veg. Chips",
+        "price": 5,
+        "image": "vegchips.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Organic Canned Vegetables",
+        "price": 4,
+        "image": "veg.jpeg"
+    },
+    {
+        "id": 4,
+        "name":" Wheat Flakes",
+        "price": 12,
+        "image": "brain.avif"
+    },
+    {
+        "id": 5,
+        "name":"Packed Jack Fruit",
+        "price": 3,
+        "image": "jack.png"
+    },
+    {
+        "id": 6,
+        "name":" Organic Fruit Cocktail",
+        "price": 2,
+        "image": "fruit.jpeg"
+    },
+    {
+        "id": 7,
+        "name":" Gotukola Tea",
+        "price": 50,
+        "image": "gotukola.jpeg"
+    },
+    {
+        "id": 8,
+        "name":" Blue Tea",
+        "price": 25,
+        "image": "blue.png"
+    }
+
+]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital,wght@@,100;0,30 010,400 10,500 10,600;0,700 1,100 1,200 1,300 1,400 1,500 1,600;1,700&family-Montserrat: wght@700; 800; 900&display-swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="NavBar">
+        <div class="logo-container">
+            <img src="2.png" width="55px" height="55px">
+            <span><b>Healthy</b> Harvest</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="homeActive" href="homepage.html">Home page</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="Untitled-2.html" class="UserIcon"><img src="userIcon.png" alt="userIcon"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+    <div class="container">
+        <header>
+            <h1>Shop</h1>
+            <div class="iconCart">
+                <img src="icon.png">
+                <div class="totalQuantity">0</div>
+            </div>
+        </header>
+
+        <div class="listProduct">
+            <div class="item">
+                <img src="images/1.webp" alt="">
+                <h2>CoPilot / Black / Automatic</h2>
+                <div class="price">$550</div>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>CART</h2>
+
+        <div class="listCart">
+            <div class="item">
+                <img src="images/1.webp">
+                <div class="content">
+                    <div class="name">CoPilot / Black / Automatic</div>
+                    <div class="price">$550 / 1 product</div>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span class="value">3</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="close">CLOSE</div>
+            <div class="checkout">
+               
+                <a href="checkout.html" id="checkoutLink">CHECKOUT</a>
+            </div>
+        </div>
+        <div class="validation-message" style="display: none;">Please select at least one product before proceeding to checkout.</div>
+    </div>
+</div>
+    <script src="shop.js"></script>
+    <script src="checkout.js"></script>
+    <footer class="footer">
+        <div class="footer-inner">
+            <p> Copyright &copy; 2024 - healthyharvest - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <section class="links">
+        <div class="links-inner">
+            <div>
+                <a href="homepage.html"><img src="2.png" alt="" width="80" height="80">
+                    <p>Home<div class="verticalline_footer"></div><span></span>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Quick Links</h3>
+                </li>
+                <li><a href="store.html">Shop Now</a></li>
+                <li><a href="gallery1o1.html">Image Gallery</a></li>
+                <li><a href="comments.html">Feed Back</a></li>
+                
+            </ul>
+            <ul>
+                <li>
+                    <h3>More</h3>
+                </li>
+                <li><a href="svgmap.html">Sitemap</a></li>
+                <li><a href="studentdetails.html">Student Details</a></li>
+                
+                <li><a href="editor page.html">Page Editor Details</a></li>
+            </ul>
+            <ul class="contact">
+                <li>
+                    <h3>Contact Us</h3>
+                </li>
+                <li class="answer">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <address>Address: No.18/1,old Quarry road,Mount Lavinia  Sri Lanka.</address>
+                </li>
+                <li class="answer">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <a href="mailto:sportspulse.lk">Email: info@healthyharvest.lk</a>
+                </li>
+                <li class="answer">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                    </div>
+                    <a href="tel:603-555-0123"> Phone: +94 765983645 </a>
+                </li>
+            </ul>
+            <div class="top">
+                <a href="#"><img src="home.jpg" alt="top" width="40" height="30"></a>
+            </div>
+        </div>
+    </section>
+
+
+<script>
+document.getElementById('checkoutLink').addEventListener('click', function(event) {
+    
+    var totalQuantity = document.querySelector('.totalQuantity').innerText;
+    if (parseInt(totalQuantity) === 0) {
+        
+        event.preventDefault();
+        alert('Your cart is empty. Please add items before proceeding to checkout.');
+    }
+});
+</script>
+</body>
+</html>

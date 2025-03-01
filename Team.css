@@ -1,0 +1,217 @@
+/* NavBar Css */
+.NavBar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 30px 12px;
+    backdrop-filter:blur(20px);
+    background-color: rgba(0,0,0,0.6);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 15px; 
+}
+
+.NavBar nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 3%;
+    padding-right: 4%;
+    padding: 5px 16px;
+}
+
+ 
+.NavBar nav ul{
+    list-style-type:none;
+    white-space:nowrap;
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items:center;
+
+}
+
+.NavBar nav ul li{
+    list-style-type:none;
+    display: inline-block; 
+    padding: 8px 20px;
+    margin-left: 8px;
+    
+    
+}
+
+.NavBar nav ul li:last-child{
+    margin-right:8px;
+}
+
+.NavBar nav ul li a{
+    color: rgba(255, 255, 255,255);
+    text-decoration: none;
+    font-weight:bolder;    
+}
+
+.UserIcon img{
+    width:40px;
+    height:30px;
+    padding-right:15px;
+    padding-top:4px;
+    margin-right:10px; 
+}
+
+.UserIcon img:hover{
+    transform: scale(1.2);
+    color:rgb(16, 218, 16);
+}
+
+.NavBar nav ul li a:hover{
+    color:rgb(16, 218, 16);
+    transition: 0.4s;
+}
+
+nav ul li a.active {
+    color: rgb(16, 218, 16);
+    font-weight: bold; 
+    
+}
+
+.NavBar span{
+    font-family:"Quicksand", sans-serif;;
+    margin-right:10px;
+    font-size:22px;
+    color:rgba(255, 255, 255,255);
+}
+
+/* Team css */
+body{
+    background-image: url('images/9.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+}
+.center-container{
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    font-size:x-large
+}
+
+
+.team-member {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 120px;
+}
+
+.student {
+    width: 250px; 
+    height: 350px; 
+    overflow: hidden; 
+    position: relative;
+    border: 2px solid rgb(126, 120, 120);
+    border-radius: 15px;
+     
+}
+
+.student img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s; 
+}
+
+.student:hover img {
+    transform: scale(1.1); 
+}
+
+.details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    padding: 20px; 
+    background: rgba(0, 0, 0, 0.705);
+    opacity: 0;
+    transition: opacity 0.9s;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.student:hover .details {
+    opacity: 0.98;
+}
+
+.team-member .student .details p {
+    text-align: center;
+    color: #ebe1e1d2;
+    padding: 6px 12px;
+    margin: 0; 
+}
+
+
+
+/* Footer css */
+.links {
+    background-color: #006600;
+    color: white;
+    padding: 50px 0;
+}
+
+.links-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.links-inner div {
+    margin-bottom: 30px;
+}
+
+.links-inner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-inner ul li h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.links-inner ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-inner .contact {
+    flex-basis: 300px;
+}
+
+.footer {
+    background-color: #006600;
+    color: white;
+    text-align: center;
+    padding: 20px 0; 
+    margin-top: 80px; 
+    margin-bottom: 0; 
+    font-size: 14px; 
+    width: 100%;
+    height: 120px;
+}
+
+.footer p {
+    margin: 0;
+}

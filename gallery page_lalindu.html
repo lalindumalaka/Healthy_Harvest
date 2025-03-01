@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="gallery page_lalindu.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital,wght@@,100;0,30 010,400 10,500 10,600;0,700 1,100 1,200 1,300 1,400 1,500 1,600;1,700&family-Montserrat: wght@700; 800; 900&display-swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+    
+
+     <!--Nav Bar-->
+     <div class="NavBar">
+        <div class="logo-container">
+            <img src="1images/logo.jpg" width="55px" height="55px">
+            <span><b>Healthy</b> Harvest</span>
+            </div>
+        <nav>
+        <ul>
+            <li><a id="homeActive" href="homepage.html">Home page</a></li>
+            <li><a href="gallery page_lalindu.html">Gallery</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="Team.html">team</a></li>
+            <li><a href="sitemap_lalindu.html">Site Map</a></li>
+            <li><a href="User_profile.html" class="UserIcon"><img src="1images/bguser.png" alt="userIcon"></a>
+        </ul>
+        </nav>
+</div>
+
+     
+    <h1> "From Farm to Fork: Celebrating Freshness and Flavor" </h1>
+    <br>
+    
+    <div class="option-controls">
+        <label for="fontSize">Font Size:</label>
+        <select id="fontSize" onchange="changeFontSize()">
+            <option value="14px">Small</option>
+            <option value="18px">Medium</option>
+            <option value="22px">Large</option>
+        </select>
+        <label for="bgColor">Background Color:</label>
+        <select id="bgColor" onchange="changeBgColor()">
+            <option value="#159C69">Default</option>
+            <option value="#ffbf00">Yellow</option>
+            <option value="#4d4d4d">Grey</option>
+            <option value="#66ffff">Light Blue</option>
+           
+        </select>
+    </div>
+    <div class="img-gallery">
+        <div class="img-container">
+            <img src="1images/fruits.jpg" onclick="openFullImg(this.src, this.alt)" alt="Fruits are naturally sweet and colorful foods that come from flowering plants. They are packed with essential vitamins, minerals, and antioxidants that are beneficial for overall health. Fruits provide our bodies with fiber, which aids digestion, and they are low in calories, making them a nutritious choice for snacks or as part of a balanced meal. With a wide variety of flavors and textures, fruits offer endless possibilities for delicious and healthy eating." title="Image 1">
+            <div class="img-title">Fruits</div>
+        </div>
+
+        <div class="img-container">
+            <img src="1images/vegetables.jpg" onclick="openFullImg(this.src, this.alt)" alt="Vegetables are nutrient-dense foods derived from plants, typically consumed as part of a balanced diet. They are rich in essential vitamins, minerals, and dietary fiber, which are crucial for maintaining overall health and well-being. Including a variety of colorful vegetables in your diet can help support immune function, aid in digestion, and reduce the risk of chronic diseases such as heart disease and certain cancers. Incorporating vegetables into meals in various forms, such as raw, steamed, or roasted, ensures a diverse intake of nutrients and promotes overall dietary balance." title="Image 2">
+            <div class="img-title">Vegetables</div>
+        </div>
+
+        <div class="img-container">
+            <img src="1images/grains.jpg" onclick="openFullImg(this.src, this.alt)" alt="Whole grains are grains that contain all parts of the grain kernel – the bran, germ, and endosperm. Unlike refined grains, which have been stripped of some nutrients during processing, whole grains retain valuable nutrients like fiber, vitamins, and minerals. Incorporating whole grains into your diet can help promote digestive health, provide sustained energy, and reduce the risk of certain chronic diseases like heart disease and type 2 diabetes." title="Image 3">
+            <div class="img-title">Whole Grains</div>
+        </div>
+        <div class="img-container">
+            <img src="1images/protiens.jpg" onclick="openFullImg(this.src, this.alt)" alt="Lean proteins are foods that provide high-quality protein with relatively low amounts of unhealthy fats and calories. They are essential for building and repairing muscles, and they can help maintain a healthy weight and support overall well-being. Examples include chicken breast, fish, tofu, and beans." title="Image 4">
+            <div class="img-title">Lean Proteins</div>
+        </div>
+        <div class="img-container">
+            <img src="1images/nuts & seeds.jpeg" onclick="openFullImg(this.src, this.alt)" alt="Nuts and seeds are small, nutrient-dense foods that are rich in healthy fats, protein, fiber, vitamins, and minerals. They are beneficial for heart health, weight management, and overall well-being." title="Image 5">
+            <div class="img-title">Nuts & Seeds</div>
+        </div>
+        <div class="img-container">
+            <img src="1images/DAIRY.jpg" onclick="openFullImg(this.src, this.alt)" alt="Dairy or dairy alternatives are sources of calcium and other essential nutrients commonly consumed for bone health and overall well-being. While traditional dairy products include milk, cheese, and yogurt, dairy alternatives like almond milk or soy yogurt provide similar nutrients for those who are lactose intolerant or prefer plant-based options." title="Image 6">
+            <div class="img-title">Dairy or Dairy Alternatives</div>
+        </div>
+        
+        
+             
+       
+        
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p> Copyright &copy; 2024 - healthyharvest - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <section class="links">
+        <div class="links-inner">
+            <div>
+                <a href="homepage.html"><img src="1images/logo.jpg" alt="" width="80" height="80">
+                    <p>Healthy<div class="verticalline_footer"></div><span>Harvest</span>
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Quick Links</h3>
+                </li>
+                <li><a href="store.html">Shop Now</a></li>
+                <li><a href="gallery page_lalindu.html">Image Gallery</a></li>
+                <li><a href="content_page.html">Content Article Page</a></li>
+                <li><a href="feedback.html">Feed Back</a></li>
+
+            </ul>
+
+                
+        </ul>
+            <ul>
+                <li>
+                    <h3>More</h3>
+                </li>
+                <li><a href="sitemap_lalindu.html">Sitemap</a></li>
+                <li><a href="Team.html">Student Details</a></li>
+                <li><a href="content page_lalindu.html">Content Artical Page</a></li>
+                <li><a href="page editor_lalindu.html">Page Editor Details</a></li>
+            </ul>
+            <ul class="contact">
+                <li>
+                    <h3>Contact Us</h3>
+                </li>
+                <li class="answer">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <address>Address: No.18/1,old Quarry road,Mount Lavinia  Sri Lanka.</address>
+                </li>
+                <li class="answer">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <a href="mailto:sportspulse.lk">Email: info@healthyharvest.lk</a>
+                </li>
+                <li class="answer">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                    </div>
+                    <a href="tel:603-555-0123"> Phone: +94 765983645 </a>
+                </li>
+            </ul>
+            <div class="top">
+                <a href="#"><img src="1images/1.png" alt="top" width="40" height="30"></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="full-img" id="fullImgBox">
+        <span onclick="closeFullImg()">X</span>
+        <img id="fullImg" src="" alt="">
+        <div class="description" id="imgDescription"></div>
+    </div>
+
+   
+        <script src="gallery page_lalindu.js"></script>
+    
+    </html>

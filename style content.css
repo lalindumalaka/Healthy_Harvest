@@ -1,0 +1,60 @@
+
+
+/* Additional CSS styling for other elements if needed */
+header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background to make text more readable */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin: 20px; /* Add some spacing around elements */
+}
+.background {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background::before {
+    content: '';
+    background-image: url('grains.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+}
+section {
+    font-weight: bold;
+    margin-inline: 10px;
+}
+body {
+    font-family: "Arial", sans-serif;
+    background-position: center;
+}
+h1 {
+    font-size: 50px; 
+    color: brown;
+}
+h3 {
+    font-size: 30px; 
+    font-decoration : underline;
+    color: rgb(68, 153, 8);
+    font-style: oblique;
+    
+}
+ul {
+    font-size: 20px;
+    color: rgb(9, 94, 63);
+    font-style: oblique;
+   
+     
+}
+p {
+    font-size: 25px;
+    font-style: oblique; 
+}

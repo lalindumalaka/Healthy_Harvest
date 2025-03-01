@@ -1,0 +1,45 @@
+
+
+.container{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 800px;
+    height: auto;
+    background-color: rgb(151, 218, 187);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.content img{
+    width: 141px;
+    height: 141px;
+    border-radius: 25%;
+    margin-bottom: 10px;
+}
+
+.page-editor-button{
+    padding: 10px;
+    text-align: center; 
+   background-color: rgb(0, 255, 187);
+   text-decoration: rgb(227, 86, 4);
+   font-weight: bold;
+}
+
+.page-editor-button a{
+  padding: 10px;
+    color: rgb(224, 20, 20);
+    background-color: var(--blue);
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 0px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital,wght@@,100;0,30 010,400 10,500 10,600;0,700 1,100 1,200 1,300 1,400 1,500 1,600;1,700&family-Montserrat: wght@700; 800; 900&display-swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="FeedbackPage.css">
+    <title>Feedback Page</title>
+</head>
+<body>
+    <div class="backgroundFeedback">
+<!--navigation bar-->         
+        <div class="NavBar">           
+                    <div class="logo-container">
+                        <img src="2.png" width="55px" height="55px">
+                        <p><span><b>Healthy</b> </span>Harvest</p>
+                    </div>
+                    <nav>
+                    <ul>
+                        <li><a id="homeActive" href="homepage.html">Home page</a></li>
+                        <li><a href="gallery page_lalindu.html">Gallery</a></li>
+                        <li><a href="Shop.html">Store</a></li>
+                         <li><a href="Team.html">team</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="User_profile.html" class="UserIcon"><img src="userIcon.png" alt="userIcon"></a>
+                    </ul>
+                    </nav>     
+         </div>
+        <!--rest of the code-->            
+        <div class="Header">
+            <h1>We appreciate your feedback</h1>
+            <p>We value your feedback! Please share your thoughts, suggestions, or report any issues you encounter using the form below.</p>
+        </div>      
+    <main>
+        <div class="formContainer">
+        <form action="#" method="post">
+            <fieldset class="FormFieldset">
+                <legend class="legend">Feedback Form</legend>
+                    <div class="form-group">
+                    <label for="name">Enter your Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br><br>
+                    
+
+
+                    <label for="email">Enter your Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br><br>
+
+                    <label>Was this your first time visiting?</label><br><br>
+                    <input type="radio" id="first-time-yes" name="first-time" value="Yes" required>
+                    <label for="first-time-yes">Yes</label>
+                    <input type="radio" id="first-time-no" name="first-time" value="No">
+                    <label for="first-time-no">No</label><br><br><br>
+                    
+                    <label>Was this website informative and easy to navigate through?:</label><br>
+                    <input type="radio" id="website-yes" name="website" value="Yes" required>
+                    <label for="website-yes">Yes</label>
+                    <input type="radio" id="website-no" name="website" value="No">
+                    <label for="website-no">No</label><br><br><br>
+                    
+                    
+                    <label for="if-no">If "No", please specify:</label><br>   
+                    <textarea id="if-no" name="if-no" rows="5" columns="20"></textarea><br><br><br>
+                   
+          
+
+                    <label>How satisfied you with our products and service? choose from 1 to 5.("1" means" Not satisfied at all" and "5" means "extremely satisfied"):</label><br><br>
+                    <input type="radio" id="rating-1" name="rating" value="1">
+                    <label for="rating-1">1</label>
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label for="rating-1">2</label>
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label for="rating-2">3</label>
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label for="rating-3">4</label>
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                    <label for="rating-4">5</label> 
+                    <br><br><br>
+
+                    
+                    <label>Would you recommend our products and service?</label><br><br>
+                    <input type="radio" id="recommend-yes" name="recommend" value="Yes" required>
+                    <label for="recommend-yes">Yes</label>
+                    <input type="radio" id="recommend-no" name="recommend" value="No">
+                    <label for="recommend-no">No</label><br><br><br>
+                    
+                    <label for="questions">Any questions or comments?</label><br><br>
+                    <div class="formtypes">
+                    <textarea id="questions" name="questions" rows="4" cols="50"></textarea><br><br><br>
+                    <div class="formButtons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="reset">
+                    </div>
+                </div>    
+            </div>            
+                
+                
+            </fieldset>
+        </form> 
+        </div>    
+    </main>      
+                    
+    <script>
+        var currentUrl = window.location.href;
+        var navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(function(link) {
+        if (link.href === currentUrl) {
+        link.classList.add('active');
+          }
+    });
+
+    </script>       
+<!--Footer of the web page-->     
+ <footer class="footer">
+    <div class="footer-inner">
+        <p> Copyright &copy; 2024 - healthyharvest - All Rights Reserved</p>
+    </div>
+</footer>
+
+<section class="links">
+    <div class="links-inner">
+        <div>
+            <a href="homepage.html"><img src="2.png" alt="" width="80" height="80">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <h3>Quick Links</h3>
+            </li>
+            <li><a href="store.html">Shop Now</a></li>
+            <li><a href="gallery page_lalindu.html">Image Gallery</a></li>
+            <li><a href="feedback.html">Feed Back</a></li>
+            
+        </ul>
+        <ul>
+            <li>
+                <h3>More</h3>
+            </li>
+            <li><a href="sitemap_lalindu.html">Sitemap</a></li>
+            <li><a href="Team.html">Student Details</a></li>
+            
+            <li><a href="editor's page.html">Page Editor Details</a></li>
+        </ul>
+        <ul class="contact">
+            <li>
+                <h3>Contact Us</h3>
+            </li>
+            <li class="answer">
+                <div>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                </div>
+                <address>Address: No.18/1,old Quarry road,Mount Lavinia  Sri Lanka.</address>
+            </li>
+            <li class="answer">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <a href="mailto:sportspulse.lk">Email: info@healthyharvest.lk</a>
+            </li>
+            <li class="answer">
+                <div>
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                </div>
+                <a href="tel:603-555-0123"> Phone: +94 765983645 </a>
+            </li>
+        </ul>
+        <div class="top">
+            <a href="#"><img src="Top.png" alt="top" width="30" height="30"></a>
+            <span>back to top</span>
+        </div>
+    </div>
+</section> 
+</div>
+</body>
+</html>
